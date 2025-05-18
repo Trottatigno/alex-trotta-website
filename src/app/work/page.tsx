@@ -1,8 +1,8 @@
-import { getPosts } from "@/app/utils/utils";
-import { Column } from "@/once-ui/components";
-import { Projects } from "@/components/work/Projects";
 import { baseURL } from "@/app/resources";
 import { person, work } from "@/app/resources/content";
+import { getPosts } from "@/app/utils/utils";
+import { Projects } from "@/components/work/Projects";
+import { Column } from "@/once-ui/components";
 
 export async function generateMetadata() {
   const title = work.title;
