@@ -54,8 +54,8 @@ const home = {
   subline: (
     <>
       Hi, I’m Alex! 👋 I specialize in building scalable web apps with React.js,
-      React Native, Next.js, Node.js and have expertise in SQL/NoSQL databases,
-      Python, and AI.
+      React Native, Next.js, Node.js and have expertise in SQL/NoSQL databases
+      and AI.
     </>
   ),
 };
@@ -80,10 +80,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Alex is a Belgium-based software engineer with a passion for
-        transforming complex challenges into simple and elegant app. His work
-        spans digital interfaces, interactive experiences, and the convergence
-        of design and technology.
+        I am Belgium-based software engineer with a passion for transforming
+        complex challenges into simple and elegant solution. My work spans
+        digital interfaces, interactive experiences, and the convergence of
+        design and technology.
       </>
     ),
   },
@@ -125,7 +125,7 @@ const about = {
       {
         company: "AT Consulting",
         timeframe: "2017 - 2024",
-        role: "Fullstack software Engineer",
+        role: "Consultant - Fullstack software Engineer",
         achievements: [
           <>
             I worked as a consultant for numerous companies, creating,

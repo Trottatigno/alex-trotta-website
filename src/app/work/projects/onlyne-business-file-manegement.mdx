@@ -1,36 +1,49 @@
 ---
-title: "Onlyne | Project Management and File Reviewing"
-publishedAt: "2024-02-02"
-summary: "Business management web/mobile app with Typescript, NextJs, Supabase and Capacitor"
-team:
-  - name: "Alex Trotta"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/in/alextrotta/"
+title: "Onlyne App | File Transfer, Collaboration & Annotation Platform (Alpha Release)"
+publishedAt: "2025-05-25"
+summary: "Web/mobile application to simplify file transfers, project collaboration, and real-time image and video annotations"
 ---
 
 ## Overview
 
-Development of a rental management web application with bank integration (bank account scanning) and online payment.
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/fudQRqAkock"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+Onlyne App is an innovative platform designed to streamline large-file sharing, collaborative project management, and instant annotation of visual content. With an intuitive interface and real-time features, teams can seamlessly work on documents, images, and videos without technical barriers or feedback delays.
 
 ## Key Features
 
-- **Project Management**: Developed tools for streamlined project tracking, task assignment, and progress monitoring, ensuring smooth workflows.
-- **Direct Customer Communication**: Implemented features for real-time communication between teams and end customers, enhancing transparency and client satisfaction.
-- **File Management & Annotations**: Built a robust system for managing files, enabling seamless annotations and timecode-based reviews for efficient collaboration.
-- **File Playback & Timecode Reviewing**: Integrated a media player with advanced timecode functionality, allowing precise review and feedback on multimedia content.
+- **Secure File Transfer**: Implemented an optimized upload/download system with end-to-end encryption and automatic resume after interruptions, ensuring data integrity.
+- **Real-Time Collaboration**: Integrated live annotations for instant communication, accompanied by live alerts and notifications on task progress and file updates. (Realtime database)
+- **Multimedia Annotation**: Advanced annotation tools allow drawing, highlighting, and commenting directly on images and videos. Annotations are synchronized so every team member can see comments as they happen.
+- **Version Control & History**: Automatic version tracking for each file, with the ability to revert to previous states, compare changes, and restore content based on timestamps.
+- **Customizable Workflow**: Configurable approval pipelines (submission → review → approval) with automated notifications and reminders to meet deadlines and responsibilities.
+- **Cross-Platform Support**: Progressive Web App (PWA) and hybrid mobile apps (iOS/Android) ensure continuous access—even offline—with automatic synchronization upon reconnection.
 
 ## Technologies Used
 
-- **React.js & Next.js**: For fast, dynammic, responsive and server-rendered web app.
-- **Supabase**: For backend services, including authentication, database management, and real-time functionality.
-- **KonvaJs**: For interactive canvas-based features, enabling advanced annotations and graphical editing.
-- **Video.Js**: For customizable video playback, supporting a wide range of formats and timecode-based reviewing.
+- **React.js & Next.js**: For a highly responsive web interface, server-side rendering, and optimized SEO.
+- **React Native & Capacitor**: To build hybrid mobile applications, delivering a native feel on both iOS and Android from a single codebase.
+- **AWS S3 & B2 Backblaze**: For storing large files with a globally distributed CDN for fast, reliable delivery. (aws-sdk)
+- **KonvaJs**: Enabling client-side image annotation, vector drawing, and image processing.
+- **Video.js**: For adaptive video playback, advanced controls, and timecode-based annotation support.
+- **Vercel**: For seamless deployment, global CDN distribution, serverless function support, and zero-configuration builds, ensuring fast, scalable hosting and continuous integration.
 
 ## Challenges and Learnings
 
-One of the main challenges was ensuring seamless integration between file management, annotations, and real-time communication features. By adopting modular architecture and leveraging modern development tools, I was able to create a cohesive system that meets diverse user needs. Collaborating closely with stakeholders to refine requirements and deliver a user-friendly solution was a key learning experience.
+One of the primary challenges was delivering a smooth user experience when annotating high-resolution videos simultaneously. We needed to optimize video streaming and design a synchronization mechanism that minimized latency. By leveraging WebRTC for streaming and Socket.IO for event synchronization, we reduced annotation display delay to under 200 ms.
+
+Another major hurdle was managing access rights and data protection. We designed a granular permissions system (view, edit, annotate, approve) and implemented server-side encryption as well as short-lived JWT tokens to secure every transaction. This experience deepened our expertise in secure architecture and GDPR compliance.
+
+Implementing a visual diff history also required integrating change-detection algorithms for images and videos.
 
 ## Outcome
 
-The ERP program has significantly improved operational efficiency, enabling teams to manage projects, review files, and communicate with clients in a unified platform. It has become an essential tool for delivering high-quality results while maintaining strong client relationships.
+Onlyne App has transformed how teams handle multimedia content, cutting validation turnaround times from days to just hours. User feedback confirms a significant boost in productivity, enhanced traceability of changes, and stronger collaboration across cross-functional teams (designers, videographers, project managers). With rapid adoption internally and among external partners, centralizing communication, sharing, and file review within a secure, intuitive ecosystem.

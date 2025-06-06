@@ -1,0 +1,43 @@
+---
+title: "RMGA After-Sales | Reservation Platform with Mecaplanning API"
+publishedAt: "2025-06-06"
+summary: "Full-stack Next.js web application for RMGA Group’s after-sales reservation system using the Mecaplanning API"
+images:
+
+team:
+  - name: "Alex Trotta"
+    role: "Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/alextrotta/"
+---
+
+## Overview
+
+I recently developed a full-stack Next.js web application for RMGA Group to streamline their after-sales reservation process. By integrating the Mecaplanning (3DSoft) API, the platform retrieves available workshop data, displays real-time time slots, and guides customers through a five-step booking flow. This solution allows users to book service appointments online quickly and efficiently.
+
+## Key Features
+
+- **Workshop Data Retrieval**: Connects to the Mecaplanning API to fetch up-to-date information on available workshops and service centers.
+- **Real-Time Availability**: Displays live time slots for customers to choose the most convenient appointment.
+- **Five-Step Booking Flow**: Guides users through a step-by-step process (select workshop, choose service, pick date/time, enter details, confirm) for a seamless reservation experience.
+
+## Technologies Used
+
+- **Next.js (React.js)**: Built the frontend as a server-rendered, responsive web application with dynamic routing and SSR for performance.
+- **Node.js & Express.js**: Created API routes and backend services to handle booking logic, and communication with the Mecaplanning API.
+- **Mecaplanning (3DSoft) API**: Integrated to retrieve workshop schedules, available mechanics, and manage appointment slots.
+- **Tailwind CSS**: Used for rapid UI development, ensuring a clean, mobile-first design.
+- **Prisma & PostgreSQL**: Implemented database schemas and queries to store booking records, and appointment history.
+- **Vercel**: Deployed the application with CI/CD pipelines, ensuring fast, scalable hosting and zero-downtime updates.
+
+## Challenges and Learnings
+
+Integrating with the Mecaplanning API posed challenges in handling asynchronous data and ensuring data consistency. To address this, I implemented robust error handling and caching strategies to avoid rate limits and ensure smooth user experiences. Additionally, orchestrating the five-step booking flow required careful state management in React to maintain form data across multiple pages without losing context. This project reinforced the importance of modular architecture and thorough testing when dealing with third-party APIs and multi-step user journeys.
+
+## Outcome
+
+The RMGA After-Sales Booking platform has significantly improved the reservation experience for customers, reducing call-center traffic and manual scheduling errors. With automated email confirmations and real-time availability. RMGA staff can now focus on servicing vehicles rather than managing bookings, resulting in higher customer satisfaction and streamlined operations.
+
+## Application Link
+
+[Visit the RMGA After-Sales Reservation Platform](https://rmga-apv.be)

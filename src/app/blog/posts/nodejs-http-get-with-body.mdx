@@ -1,0 +1,79 @@
+---
+title: "How to Send GET Requests with a Body in Node.js"
+publishedAt: "2025-06-06"
+summary: "Some APIs, like Mecaplanning from 3DSoft, require GET requests with a body — a practice that defies HTTP standards. In this article, we explore how to handle this edge case using Node.js's native `https` module, and present a practical GitHub repository you can use today."
+tag: "Node.js"
+---
+
+# How to Send GET Requests with a Body in Node.js
+
+In HTTP standards, GET requests are **not supposed to have a body**. However, certain APIs break this convention — either by design or oversight. One such example is the [Mecaplanning API](https://www.3dsoft.fr/), which expects data to be sent in the body of a GET request.
+
+This unusual requirement led me to build a small, specialized Node.js utility: [`nodejs-http-get-with-body`](https://github.com/Trottatigno/nodejs-http-get-with-body). It's a simple, robust solution to make such requests possible using Node’s built-in `https` module.
+
+## Why This Is Necessary
+
+The majority of libraries and HTTP clients — like Axios or Fetch — **do not allow a body in GET requests**. They follow the standard, which discourages this pattern. But if you're working with a legacy or poorly designed API that mandates a body in GET, you have to go low-level.
+
+That’s exactly what this utility does: it bypasses high-level abstractions and uses Node’s native `https.request()` to send custom headers and a JSON body — even with the `GET` method.
+
+## Key Features of the Utility
+
+1. **Pure Node.js (no external dependencies)**  
+   The script relies solely on the native `https` module, making it lightweight and portable.
+
+2. **Support for HTTPS GET with a body**  
+   This is the main feature: you can send a request body with a `GET` request — something other libraries typically block.
+
+3. **Easy-to-use helper function**  
+   Just import the utility, pass in your URL, headers, and body — and you’re good to go.
+
+## How It Works
+
+The utility uses Node’s `https.request()` method, where you can manually set:
+
+- Method: `'GET'`
+- Headers: including `Content-Type` and `Content-Length`
+- Request body: passed in as a JSON string
+
+Here’s a quick example:
+
+```javascript
+const { getWithBody } = require("./getWithBody");
+
+const url = "https://example.com/api/data";
+const body = { userId: "123", filter: "recent" };
+const headers = { "Content-Type": "application/json" };
+
+getWithBody(url, headers, body)
+  .then((response) => console.log(response))
+  .catch((error) => console.error(error));
+```
+
+This script will send a GET request with a body, just like the Mecaplanning API expects.
+
+## When Should You Use This?
+
+Only when absolutely necessary.
+
+GET requests with a body are not recommended, and not supported by many intermediaries like proxies and caches. But if you must deal with an API that’s built this way, this tool can save you hours of frustration.
+
+Use this only in cases where:
+
+- The API you’re calling explicitly requires a body in a GET request
+- You can’t modify the API behavior
+- No other HTTP method (like POST) is accepted
+
+## GitHub Repository
+
+You can find the complete utility, along with documentation and examples, on GitHub:
+
+👉 [nodejs-http-get-with-body](https://github.com/Trottatigno/nodejs-http-get-with-body)
+
+Feel free to fork it, star it, or contribute improvements!
+
+## Conclusion
+
+While not standard, GET requests with a body are sometimes unavoidable. With the right tools — like the one I’ve created — you can still work effectively with these edge-case APIs.
+
+If you've ever been stuck debugging why your GET request isn't working even though "the body is correct" — this is likely the missing piece.
