@@ -32,7 +32,7 @@ export const Footer = () => {
             <SmartLink
               style={{ marginLeft: "-0.125rem" }}
               href="https://once-ui.com/templates/magic-portfolio"
-              className="opacity-20"
+              className="opacity-10"
             >
               / credits
             </SmartLink>
