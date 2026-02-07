@@ -94,7 +94,7 @@ const about = {
       {
         company: "Onlyne",
         timeframe: "2024 - Present",
-        role: "Senior Fullstack Engineer",
+        role: "Senior Fullstack Developer",
         achievements: [
           <>
             I established the technical stack for the application, defining its
@@ -123,27 +123,9 @@ const about = {
         ],
       },
       {
-        company: "AT Consulting",
-        timeframe: "2017 - 2024",
-        role: "Consultant - Fullstack software Engineer",
-        achievements: [
-          <>
-            I worked as a consultant for numerous companies, creating,
-            maintaining, and developing custom software solutions tailored to
-            their unique needs and challenges.
-          </>,
-          <>
-            I delivered web development talks and gained hands-on experience in
-            the startup ecosystem in Belgium, contributing to innovative
-            projects and fostering growth in dynamic environments.
-          </>,
-        ],
-        images: [],
-      },
-      {
         company: "Timber Tailor",
         timeframe: "2021 - 2022",
-        role: "Software Engineer Technical Lead",
+        role: "Technical Lead - Fullstack Developer",
         achievements: [
           <>
             I developed an internal construction site tracking management
@@ -154,6 +136,24 @@ const about = {
             I designed and implemented robust backend solutions using Node.js
             and Express.js, creating high-performance and secure APIs to ensure
             smooth data management and an optimal user experience.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "AT Consulting",
+        timeframe: "2017 - 2024",
+        role: "Consultant - Fullstack Developer",
+        achievements: [
+          <>
+            I worked as a consultant for numerous companies, creating,
+            maintaining, and developing custom software solutions tailored to
+            their unique needs and challenges.
+          </>,
+          <>
+            I delivered web development talks and gained hands-on experience in
+            the startup ecosystem in Belgium, contributing to innovative
+            projects and fostering growth in dynamic environments.
           </>,
         ],
         images: [],

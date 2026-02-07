@@ -1,0 +1,69 @@
+---
+title: "HubGrid | Cloud DAM Platform for Professional Photo & Video Management"
+publishedAt: "2025-11-05"
+summary: "Enterprise-grade Digital Asset Management (DAM) SaaS platform for secure storage, sharing, and real-time collaboration on photo and video content"
+---
+
+## Overview
+
+HubGrid is a cloud-based Digital Asset Management (DAM) platform designed for professionals who need to securely store, organize, and share large volumes of photo and video content. Built as a scalable SaaS solution, HubGrid serves creative agencies, media teams, and organizations managing multiple brands or clients across distributed teams.
+
+The platform is available as a web application and a mobile app (iOS/Android), offering seamless access to assets anywhere, anytime. HubGrid focuses on performance, security, and scalability, while providing transparent, storage-based pricing tailored to professional usage.
+
+As Tech Lead and Engineering Manager, I led the full technical design, development, and delivery of the platform, overseeing architecture decisions, feature implementation, cloud infrastructure, and team coordination.
+
+## Key Features
+
+- **Professional Asset Storage & Sharing**  
+  Centralized storage for high-resolution photos and videos with optimized delivery through a global CDN. Assets can be securely shared with internal teams or external partners using granular access rights.
+
+- **Advanced Upload System**  
+  Implemented a robust upload pipeline using Uppy, supporting large files, resumable uploads, progress tracking, and error recovery for unreliable network conditions.
+
+- **Real-Time Capabilities**  
+  Leveraged Supabase Realtime to enable live updates across the platform (asset status, permissions, collaboration signals), ensuring consistency between users without manual refresh.
+
+- **Multi-Tenant & Multi-Organization Architecture**  
+  Designed an advanced multi-tenant system with full isolation between organizations, including support for subdomain-based access (e.g. `client.hubgrid.app`). Each organization has its own users, roles, storage limits, and permissions.
+
+- **Cloud Storage Abstraction**  
+  Integrated multiple cloud storage providers (Google Cloud, AWS S3, Backblaze B2) behind a unified service layer, allowing flexible storage strategies and future scalability.
+
+- **Security & Access Control (RLS)**  
+  Implemented strict Row Level Security (RLS) rules to ensure data isolation at the database level, combined with role-based access control for users and teams.
+
+- **Webhooks & Automation**  
+  Added application-level webhooks to notify external systems of key events (uploads, deletions, permission changes), enabling automation and third-party integrations.
+
+- **Cross-Platform Experience**  
+  Web platform built for performance and SEO, complemented by a React Native mobile application following a clean Model–View–Controller (MVC) architecture with dedicated service layers.
+
+## Technologies Used
+
+- **Frontend (Web)**  
+  React.js, Next.js (App Router, API Routes, Server Components)
+
+- **Mobile**  
+  React Native, MVC architecture with dedicated services for API, storage, and business logic
+
+- **Backend & Infrastructure**  
+  Node.js, Supabase (PostgreSQL, Realtime, Auth, RLS), full REST API architecture
+
+- **Cloud & Deployment**  
+  Vercel (hosting, serverless functions, CI/CD), global CDN, multi-cloud storage (AWS S3, Google Cloud Storage, Backblaze B2)
+
+## Challenges and Learnings
+
+One of the main challenges was designing a scalable DAM architecture capable of handling very large media files while maintaining fast access times and predictable costs. Abstracting storage providers and combining them with CDN delivery required careful design to avoid vendor lock-in and ensure performance consistency.
+
+Another key challenge was implementing true multi-tenancy with strong security guarantees. By combining subdomain-based organization routing, strict RLS policies, and role-based permissions, we achieved full data isolation without sacrificing flexibility or developer velocity.
+
+Managing both a web platform and a native mobile application required strong architectural discipline. Establishing shared API contracts, consistent authentication flows, and reusable service patterns was essential to keep the codebase maintainable as the team scaled.
+
+As Tech Lead, coordinating developers, managing technical debt, prioritizing features, and aligning business goals with engineering constraints reinforced the importance of clear technical leadership and documentation.
+
+## Outcome
+
+HubGrid delivers a robust, scalable DAM solution tailored to professional media workflows. The platform enables teams to centralize their visual assets, collaborate efficiently, and securely distribute content across organizations and clients.
+
+From a technical standpoint, HubGrid stands as a production-ready SaaS platform, built with modern web technologies, cloud-native infrastructure, and a strong focus on performance, security, and maintainability. The project demonstrates end-to-end ownership, from architecture and development to deployment, team management, and long-term scalability planning.
