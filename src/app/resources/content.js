@@ -4,7 +4,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Fullstack Software Engineer",
+  role: "Fullstack Software Developer",
   avatar: "/images/avatar.jpg",
   location: "Europe/Brussels", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "French", "Spanish", "Italian"], // optional: Leave the array empty if you don't want to display languages
@@ -44,6 +44,11 @@ const social = [
     icon: "email",
     link: "mailto:trotta.alexandre.pro@gmail.com",
   },
+  {
+    name: "CV",
+    icon: "document",
+    link: "/CV/CV-ALEXANDRE-TROTTA.pdf",
+  },
 ];
 
 const home = {
@@ -53,9 +58,8 @@ const home = {
   headline: <>Fullstack Software Engineer</>,
   subline: (
     <>
-      Hi, I’m Alex! 👋 I specialize in building scalable web apps with React.js,
-      React Native, Next.js, Node.js and have expertise in SQL/NoSQL databases
-      and AI.
+      Hi, I’m Alex! 👋 I specialize in building scalable web and mobile
+      applications with a focus on performance, user experience and clean code.
     </>
   ),
 };
@@ -72,7 +76,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3HMA5tSxN6SnMiuSrriNOsxd1BBiuyGmlybe2c1YLjwgKesVSI7qX_LxQd89HNq5IgUbNLQlTU",
   },
   intro: {
@@ -80,10 +84,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I am Belgium-based software engineer with a passion for transforming
-        complex challenges into simple and elegant solution. My work spans
-        digital interfaces, interactive experiences, and the convergence of
-        design and technology.
+        I am Belgium-based senior software engineer with a passion for
+        transforming complex challenges into simple and elegant solution. My
+        work spans digital interfaces, interactive experiences, and the
+        convergence of design and technology.
       </>
     ),
   },
@@ -94,22 +98,19 @@ const about = {
       {
         company: "Onlyne",
         timeframe: "2024 - Present",
-        role: "Senior Fullstack Developer",
+        role: "Tech Lead - Fullstack Developer",
         achievements: [
           <>
-            I established the technical stack for the application, defining its
-            structure, architecture, and the solutions used to ensure
-            scalability, performance, and seamless development.
+            As a Senior Software Developer, I defined and led the application’s
+            technical stack, designing its structure and architecture while
+            managing a small internal development team to ensure scalability,
+            performance, and seamless development.
           </>,
           <>
-            I developed an ERP (web and mobile app) that manages file transfers
-            from teams to clients, seamlessly integrating with ERP systems for
-            efficient and secure data exchange.
-          </>,
-          <>
-            I built online annotation features using Canvas API and HTML5, along
-            with a video media player with annotations, editing capabilities,
-            enhancing user interaction and content customization.
+            I led the development of an ERP solution (web and mobile),
+            coordinating a small internal team to build a secure platform
+            managing file transfers from teams to clients, with seamless
+            integrations into existing ERP systems.
           </>,
         ],
         images: [
@@ -125,7 +126,7 @@ const about = {
       {
         company: "Timber Tailor",
         timeframe: "2021 - 2022",
-        role: "Technical Lead - Fullstack Developer",
+        role: "Fullstack Developer",
         achievements: [
           <>
             I developed an internal construction site tracking management
@@ -203,6 +204,16 @@ const about = {
         ],
       },
       {
+        title: "Python",
+        description: (
+          <>
+            Strong experience with Python for backend development, scripting,
+            and building robust, maintainable server-side applications.
+          </>
+        ),
+        images: [],
+      },
+      {
         title: "ReactJs",
         description: (
           <>
@@ -226,6 +237,17 @@ const about = {
         images: [],
       },
       {
+        title: "UI Design & Prototyping (Figma)",
+        description: (
+          <>
+            Skilled in designing clean and intuitive user interfaces using
+            Figma, creating design systems, wireframes, and developer-friendly
+            prototypes.
+          </>
+        ),
+        images: [],
+      },
+      {
         title: "NodeJs & ExpressJs",
         description: (
           <>
@@ -238,6 +260,17 @@ const about = {
         images: [],
       },
       {
+        title: "Django & FastAPI",
+        description: (
+          <>
+            Experienced in building scalable and secure backend services using
+            Django and FastAPI, including REST APIs, authentication, and
+            high-performance asynchronous endpoints.
+          </>
+        ),
+        images: [],
+      },
+      {
         title: "SQL & NoSQL databases",
         description: (
           <>
@@ -246,6 +279,27 @@ const about = {
           </>
         ),
         // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Supabase",
+        description: (
+          <>
+            Experienced in using Supabase for backend-as-a-service solutions,
+            including authentication, real-time databases, storage, and
+            PostgreSQL integrations.
+          </>
+        ),
+        images: [],
+      },
+      {
+        title: "PostgreSQL",
+        description: (
+          <>
+            Strong expertise in PostgreSQL, including schema design, performance
+            optimization, relational modeling, and complex SQL queries.
+          </>
+        ),
         images: [],
       },
     ],
