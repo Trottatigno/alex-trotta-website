@@ -4,7 +4,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Fullstack Software Developer",
+  role: "Full-Stack Software Engineer (Security Specialization)",
   avatar: "/images/avatar.jpg",
   location: "Europe/Brussels", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "French", "Spanish", "Italian"], // optional: Leave the array empty if you don't want to display languages
@@ -55,11 +55,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Fullstack Software Engineer</>,
+  headline: <>Full-Stack Engineer, Security-Specialized</>,
   subline: (
     <>
-      Hi, I’m Alex! 👋 I specialize in building scalable web and mobile
-      applications with a focus on performance, user experience and clean code.
+      Hi, I am Alex. I build scalable web and mobile products with a strong
+      focus on secure architecture, data protection, and reliable delivery from
+      design to deployment.
     </>
   ),
 };
@@ -84,10 +85,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I am Belgium-based senior software engineer with a passion for
-        transforming complex challenges into simple and elegant solution. My
-        work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        I am a Belgium-based Full-Stack Software Engineer with a security
+        specialization. Over 6+ years, I have delivered web and mobile products
+        by combining scalable architecture, secure application design, and
+        end-to-end ownership from product requirements to production deployment.
       </>
     ),
   },
@@ -97,20 +98,17 @@ const about = {
     experiences: [
       {
         company: "Onlyne",
-        timeframe: "2024 - Present",
-        role: "Tech Lead - Fullstack Developer",
+        timeframe: "Nov 2024 - Present",
+        role: "Tech Lead - Full-Stack Developer",
         achievements: [
           <>
-            As a Senior Software Developer, I defined and led the application’s
-            technical stack, designing its structure and architecture while
-            managing a small internal development team to ensure scalability,
-            performance, and seamless development.
+            Led technical strategy for a document-centric ERP, defining the
+            architecture and guiding delivery across web and mobile surfaces.
           </>,
           <>
-            I led the development of an ERP solution (web and mobile),
-            coordinating a small internal team to build a secure platform
-            managing file transfers from teams to clients, with seamless
-            integrations into existing ERP systems.
+            Built secure file management workflows with versioning, granular
+            RBAC permissions, and real-time collaboration features, while
+            improving team review velocity through mentoring.
           </>,
         ],
         images: [
@@ -124,37 +122,52 @@ const about = {
         ],
       },
       {
-        company: "Timber Tailor",
-        timeframe: "2021 - 2022",
-        role: "Fullstack Developer",
+        company: "Independent Consultant",
+        timeframe: "Jun 2022 - Oct 2024",
+        role: "Full-Stack & Cybersecurity Consultant",
         achievements: [
           <>
-            I developed an internal construction site tracking management
-            program that enhances team communication and optimizes client
-            follow-up, making processes more efficient and transparent.
+            Delivered full-stack web and mobile solutions for startups and SMEs,
+            translating business constraints into reliable and maintainable
+            systems.
           </>,
           <>
-            I designed and implemented robust backend solutions using Node.js
-            and Express.js, creating high-performance and secure APIs to ensure
-            smooth data management and an optimal user experience.
+            Performed security audits across 8 SMEs and contributed to the
+            remediation of 25+ critical vulnerabilities, including SQL injection
+            and XSS exposure.
           </>,
         ],
         images: [],
       },
       {
-        company: "AT Consulting",
-        timeframe: "2017 - 2024",
-        role: "Consultant - Fullstack Developer",
+        company: "Timber Tailor",
+        timeframe: "Mar 2020 - Jun 2022",
+        role: "Full-Stack Web Developer",
         achievements: [
           <>
-            I worked as a consultant for numerous companies, creating,
-            maintaining, and developing custom software solutions tailored to
-            their unique needs and challenges.
+            Developed and deployed a construction tracking web application used
+            daily by operations teams, replacing paper-driven workflows.
           </>,
           <>
-            I delivered web development talks and gained hands-on experience in
-            the startup ecosystem in Belgium, contributing to innovative
-            projects and fostering growth in dynamic environments.
+            Built custom CRM and internal collaboration tools to improve client
+            follow-up and communication between teams.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Freelance / Student Entrepreneur",
+        timeframe: "Feb 2017 - Mar 2020",
+        role: "Full-Stack Developer",
+        achievements: [
+          <>
+            Built and launched business websites and custom applications for
+            small companies using JavaScript, PHP, and Python.
+          </>,
+          <>
+            Applied secure-by-default practices, including SSL setup and OWASP
+            hardening fundamentals, to protect client data and support GDPR
+            expectations.
           </>,
         ],
         images: [],
@@ -180,124 +193,42 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "JavaScript",
+        title: "Frontend & Mobile",
         description: (
           <>
-            Proficient in modern JavaScript (ES6+), writing clean, efficient,
-            and maintainable code for dynamic web applications.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          // {
-          //   src: "/images/projects/project-01/cover-02.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-          // {
-          //   src: "/images/projects/project-01/cover-03.jpg",
-          //   alt: "Project image",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
-      },
-      {
-        title: "Python",
-        description: (
-          <>
-            Strong experience with Python for backend development, scripting,
-            and building robust, maintainable server-side applications.
+            TypeScript, React, Next.js, and React Native for responsive and
+            maintainable product interfaces.
           </>
         ),
         images: [],
       },
       {
-        title: "ReactJs",
+        title: "Backend & APIs",
         description: (
           <>
-            Experienced in building scalable and interactive UIs with React,
-            using hooks, context, and state management libraries like Zustand.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "NextJs",
-        description: (
-          <>
-            Skilled in leveraging Next.js for full-stack applications,
-            optimizing performance with server-side rendering (SSR), static
-            generation (SSG), and API routes.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "UI Design & Prototyping (Figma)",
-        description: (
-          <>
-            Skilled in designing clean and intuitive user interfaces using
-            Figma, creating design systems, wireframes, and developer-friendly
-            prototypes.
+            Node.js, Express, Python, FastAPI, and Django for secure and
+            scalable backend services.
           </>
         ),
         images: [],
       },
       {
-        title: "NodeJs & ExpressJs",
+        title: "Data & Cloud",
         description: (
           <>
-            Strong backend development skills using Node.js and Express.js to
-            create RESTful APIs, authentication systems, and real-time
-            applications.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "Django & FastAPI",
-        description: (
-          <>
-            Experienced in building scalable and secure backend services using
-            Django and FastAPI, including REST APIs, authentication, and
-            high-performance asynchronous endpoints.
+            PostgreSQL, Supabase, SQLite, MongoDB, and cloud integrations with
+            AWS S3 and Azure.
           </>
         ),
         images: [],
       },
       {
-        title: "SQL & NoSQL databases",
+        title: "Security & DevOps",
         description: (
           <>
-            Experienced in database design and management, handling complex
-            queries with PostgreSQL, Supabase, and NoSQL solutions like MongoDB.
-          </>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [],
-      },
-      {
-        title: "Supabase",
-        description: (
-          <>
-            Experienced in using Supabase for backend-as-a-service solutions,
-            including authentication, real-time databases, storage, and
-            PostgreSQL integrations.
-          </>
-        ),
-        images: [],
-      },
-      {
-        title: "PostgreSQL",
-        description: (
-          <>
-            Strong expertise in PostgreSQL, including schema design, performance
-            optimization, relational modeling, and complex SQL queries.
+            RBAC, secure API design, OWASP-oriented hardening, SonarQube, Snyk,
+            Burp Suite, Nmap, Docker, Linux, CI/CD, GitHub Actions, and
+            Kubernetes.
           </>
         ),
         images: [],
